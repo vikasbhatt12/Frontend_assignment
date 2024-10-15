@@ -1,0 +1,138 @@
+.Dashboard-Container {
+    height: calc(100% - 60px);
+    padding: 25px;
+    gap: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    zoom: 0.75;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    max-width: calc(20% - 20px);
+    border-radius: 8px;
+  }
+  
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .icon-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-text i {
+    font-size: 22px;
+  }
+  
+  .icon-text .text {
+    padding: 0px 12px;
+    font-weight: 600;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .icon-text span {
+    color: #8a8585;
+    font-size: 16px;
+  }
+  
+  .icon-text #todo {
+    color: #8a8585;
+  }
+  
+  .icon-text #progress {
+    color: rgba(247, 166, 15, 0.699);
+  }
+  
+  .icon-text #done {
+    color: rgba(79, 39, 210, 0.71);
+  }
+  
+  .icon-text #cancel {
+    color: #8a8585cd;
+  }
+  
+  .icon-text #backlog {
+    color: rgb(80, 55, 206);
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .actions i {
+    font-size: 22px;
+    color: #8a8585;
+  }
+  
+  .icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 8px; 
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .Dashboard-Container {
+        flex-direction: column; 
+        padding: 10px; 
+        gap: 15px; 
+        zoom: 1; 
+    }
+  
+    .column {
+        max-width: 100%; 
+        margin-bottom: 20px;
+    }
+  
+    .Header {
+        display: flex; 
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+  
+    .icon-text i {
+        font-size: 18px; 
+    }
+  
+    .icon-text .text {
+        font-size: 14px; 
+    }
+  
+    .icon {
+        width: 16px; 
+        height: 16px;
+    }
+  
+    .actions i {
+        font-size: 18px; 
+    }
+  }
+  
+ 
+  @media screen and (max-width: 480px) {
+    .Dashboard-Container {
+        padding: 8px;
+        gap: 10px;
+    }
+  
+    .icon-text .text, .icon-text span {
+        font-size: 12px; 
+    }
+  
+    .icon {
+        width: 14px; 
+        height: 14px;
+    }
+  
+    .actions i {
+        font-size: 16px;
+    }
+  }
