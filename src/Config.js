@@ -1,1 +1,1 @@
-export const FETCH_URL = "https://api.quicksell.co/v1/internal/frontend-assignment";
+export const FETCH_URL = process.env.REACT_APP_FETCH_URL;
